@@ -1,0 +1,19 @@
+// Typography
+$base--font-size: 14px;
+$base--line-height: 24px;
+
+$font--Roboto: 'Roboto', sans-serif; // 100 300 500
+$font--Museo-500: 'Museo500-Regular', sans-serif;
+$font--Museo-700: 'Museo700-Regular', sans-serif;
+
+// Colors
+
+$colors: (
+  whiskey: #f4f6f4,
+  wine: #e9e3df,
+  beer: #52493D
+);
+
+//
+$page--min-width: rem(320);
+$page--side-padding: rem(25);
