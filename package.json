@@ -1,0 +1,31 @@
+{
+  "name": "beamust",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "~3.8.10",
+    "gulp-file": "~0.2.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-jade": "~0.11.0",
+    "browser-sync": "~2.0.0-rc5",
+    "gulp-watch": "~4.1.0",
+    "gulp-sass": "~1.3.2",
+    "gulp-inject": "~1.1.1",
+    "gulp-ruby-sass": "~1.0.0-alpha.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sabotag/beamust.git"
+  },
+  "author": "sabotag",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/sabotag/beamust/issues"
+  }
+}
