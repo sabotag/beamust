@@ -1,0 +1,24 @@
+@mixin font__roboto-thin {
+  font-family: $font--Roboto;
+  font-weight: 100;
+}
+
+@mixin font__roboto-light {
+  font-family: $font--Roboto;
+  font-weight: 300;
+}
+
+@mixin font__roboto-medium {
+  font-family: $font--Roboto;
+  font-weight: 500;
+}
+
+@mixin logo__size ($width) {
+  font-weight: $em-base;
+  @include size(rem($width) rem($width*$logo-ratio));
+}
+
+
+@mixin side-padding($vp: 0, $hp: $page--side-padding){
+  @include padding($vp $hp)
+}

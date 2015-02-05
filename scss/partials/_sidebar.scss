@@ -1,3 +1,34 @@
 .page-sidebar {
+//  background: get__color(wine);
+  width: rem(300);
+  @include side-padding($page--side-padding)
+}
 
+.sidebar__user-panel {
+  .user-photo {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: rem(4) solid get__color(vodka);
+    @include size(rem(96));
+
+    &:before, &:after{
+      content: '';
+      border-radius: 50%;
+      @include position(absolute, 0);
+    }
+
+    &:before {
+      box-shadow: 0 0 0 rem(4) get__color(beer);
+    }
+
+    &:after {
+      box-shadow: 0 0 0 rem(2) get__color(cola);
+    }
+
+    img {
+      vertical-align: top;
+      @include size(100%);
+    }
+  }
 }

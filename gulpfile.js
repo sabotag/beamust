@@ -15,18 +15,8 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('inject', function () {
-    return gulp.src('./public/*.html')
-        .pipe(inject(gulp.src('./public/css/*.css', {read: false}), {
-                ignorePath: 'public',
-                relative: true
-            }))
-        .pipe(gulp.dest('./public/'))
-        .pipe(reload({stream:true}));
-});
-
 gulp.task('jade', function(){
-    gulp.src('./jade/**/*.jade')
+    gulp.src('./views/*.jade')
         .pipe(jade({
             pretty: true
         }))
@@ -35,18 +25,20 @@ gulp.task('jade', function(){
 });
 
 gulp.task('sass', function () {
-    return sass('./scss/')
-        .on('error', function (err) {
+    return sass('./scss/', {
+            style: 'compact'
+        }).on('error', function (err) {
             console.error('Error!', err.message);
         })
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./public/css'))
+        .pipe(reload({stream:true}));
+
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./jade/*.jade', ['jade']);
+    gulp.watch('./views/*.jade', ['jade']);
     gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./public/*.html', ['inject']);
 
 });
 
-gulp.task('default', ['jade', 'sass', 'inject', 'watch', 'browser-sync']);
+gulp.task('default', ['jade', 'sass', 'watch', 'browser-sync']);

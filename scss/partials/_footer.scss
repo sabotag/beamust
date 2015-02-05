@@ -1,3 +1,21 @@
-.page-footer {
-  @include position(fixes, null 0 0 0);
+.page__footer {
+  background: get__color(beer);
+  font-size: rem(12);
+  white-space: nowrap;
+  overflow: hidden;
+  @include side-padding(rem(10));
+  @include position(fixed, null 0 0 0);
+
+  .logo {
+    display: inline-block;
+    vertical-align: bottom;
+    @include logo__size(130);
+  }
+
+  .site-version {
+    display: inline-block;
+    margin-left: rem(5);
+    color: get__color(cola);
+    @include font__roboto-light;
+  }
 }
