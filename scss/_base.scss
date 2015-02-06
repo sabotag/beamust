@@ -42,3 +42,17 @@ a{
   clear: both;
 }
 
+.label {
+  margin-right: rem(5);
+  background-color: get__color(cola);
+  font-size: rem(10);
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: rem(3);
+  color: get__color(milk);
+  padding: 0 rem(3);
+  line-height: rem(13);
+  &.highlight {
+    background-color: get__color(martini);
+  }
+}
