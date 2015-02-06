@@ -38,32 +38,35 @@ html(lang="en")
               ul.main-nav__submenu
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    i.main-nav__icon.fa.fa-th-list
+                    span.main-nav__badge
+                      i.main-nav__icon.fa.fa-pencil
+                      em.main-nav__badge-alert 6
                   a.main-nav__link(href='#') Drafts
                 li.main-nav__submenu-item.active
                   span.main-nav__icon-wrapper
-                    span.main-nav__badge 29
-
+                    span.main-nav__badge
+                      | 29
+                      em.main-nav__badge-alert 26
                   a.main-nav__link(href='#') Inbox
                 li.main-nav__submenu-item
-                  span.main-nav__icon-wrapper
-                    i.main-nav__icon.fa.fa-th-list
                   a.main-nav__link(href='#') Sent
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    i.main-nav__icon.fa.fa-th-list
+                    span.main-nav__badge
+                      i.main-nav__icon.fa.fa-star
                   a.main-nav__link(href='#') Marked
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    i.main-nav__icon.fa.fa-th-list
+                    span.main-nav__badge 3
                   a.main-nav__link(href='#') Spam
                 li.main-nav__submenu-item
-                  span.main-nav__icon-wrapper
-                    i.main-nav__icon.fa.fa-th-list
                   a.main-nav__link(href='#') Trash
-              .main-nav__labels
-                .main-nav__labels-title
-                .main-nav__labels-title
+
+              ul.main-nav__submenu-mini
+                li.main-nav__submenu-item
+                  .main-nav__submenu-item__title Notes
+                li.main-nav__submenu-item
+                  .main-nav__submenu-item__title Setings
 
           .main-nav__item
             .main-nav__title

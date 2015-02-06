@@ -2,25 +2,48 @@
 
   .main-nav__item {
     position: relative;
-    margin-top: rem(5);
+
+    &.active {
+      background: get__color(milk);
+      border-radius: rem(7) 0 0 rem(7);
+
+      > .main-nav__title {
+        background: get__color(martini);
+        border-radius: rem(7) 0 rem(7) 0;
+        color: get__color(milk);
+
+        .main-nav__link {
+          color: get__color(milk);
+          @include font__roboto-medium;
+        }
+      }
+
+      .main-nav__item-detail {
+        display: block;
+      }
+
+      .main-nav__submenu {
+        border-radius: 0 0 0 rem(7);
+      }
+    }
   }
 
   .main-nav__title {
     position: relative;
-    padding-left: rem(64);
-    @include adjust-font-size-to(rem(22));
+    padding: rhythm(.5) 0 rhythm(.5) rhythm(2) ;
+    @include adjust-font-size-to(rem(21), 1);
 
     .main-nav__icon-wrapper {
-      left: rem(20);
+      left: rhythm(.5);
+      top: rhythm(.5);
     }
   }
 
   .main-nav__icon-wrapper {
     @include position(absolute, 0 null null 0);
-  }
 
-  .main-nav__icon {
-
+    .main-nav__icon {
+    }
   }
 
   .main-nav__link {
@@ -32,26 +55,59 @@
 
   .main-nav__badge {
     white-space: nowrap;
-    font-size: rem(12);
     display: inline-block;
     border-radius: 50%;
     text-align: center;
     min-width: rhythm();
     color: get__color(whiskey);
     background: get__color(martini);
-    box-shadow: 0 0 2px get__color(vodka);
+    box-shadow: inset 1px 1px 0 0 get__color(vodka);
     vertical-align: text-bottom;
     padding: 0 rem(5);
+    @include adjust-font-size-to(rem(12), 1);
     @include font__roboto-medium;
+
+    .main-nav__badge-alert {
+      background: get__color(cola);
+      font-style: normal;
+      border-radius: 50%;
+      min-width: rhythm(.75);
+      @include adjust-font-size-to(rem(10), .75);
+      @include position(absolute, rem(-4) rem(-6) null null);
+    }
+  }
+
+  .main-nav__item-detail {
+    display: none;
   }
 
   .main-nav__submenu {
-    padding-left: rem(34);
+    padding: rhythm(1) rhythm(1.5);
   }
 
   .main-nav__submenu-item {
     position: relative;
-    padding-left: rem(27);
-    @include adjust-font-size-to(rem(16));
+    margin-left: rem(27);
+    @include adjust-font-size-to(rem(16), 1);
+
+    + .main-nav__submenu-item {
+      margin-top: rem(5);
+    }
+
+    .main-nav__icon-wrapper {
+      left: auto;
+      right: 100%;
+      margin-right: rem(10);
+    }
+
+    .main-nav__badge {
+//      box-shadow: none;
+    }
+
+    &.active {
+      .main-nav__link {
+        @include font__roboto-medium;
+      }
+    }
   }
 }
