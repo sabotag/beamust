@@ -35,17 +35,23 @@
 }
 
 .email-list-header__favorite {
-  border-radius: rem(8) 0 0 0;
   border-width: 2px 0 0 2px;
   text-align: center;
 }
 
 .email-list-header__favorite:before {
-
+  content: '';
+  display: block;
+  width: rem(16);
+  height: rem(16);
+  position: absolute;
+  border-top-left-radius: rem(8);
+  margin-left: 2px;
+  box-shadow: -2px -2px #ffffff, -7px -6px #A3C3DC;
 }
 
 .email-list_checkboxes_yes .email-list-header__favorite {
-  box-shadow: inset 2px 0 #ffffff, 0px -2px #ffffff, -4px -6px #A3C3DC;
+  box-shadow: inset 2px 0 #ffffff; /* , 0px -2px #ffffff, -4px -6px #A3C3DC */
 }
 
 .email-list-header__label {
