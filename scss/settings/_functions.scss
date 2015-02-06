@@ -3,7 +3,8 @@ $colors: (
   wine: #e9e3df,
   beer: #52493D,
   cola: #988a7d,
-  vodka: #a3c3dc
+  vodka: #a3c3dc,
+  martini: #86b0cf
 );
 
 @function get__color($color) {

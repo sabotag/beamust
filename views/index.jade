@@ -7,24 +7,91 @@ html(lang="en")
   body
     .page-wrapper(role='main')
       aside.page__sidebar(role='aside')
-        .sidebar__user-panel
+        section.sidebar__user-panel
           .user-photo
             img(src='http://fakeimg.pl/100/?text=Photo')
           .user-info
             .user-name Arnaud
             .user-nav
-              a(href='#')
+              a.user-nav__link(href='#')
                 i.fa.fa-arrow-circle-o-down
-              a(href='#')
+              a.user-nav__link(href='#')
                 i.fa.fa-lock
-              a(href='#')
+              a.user-nav__link(href='#')
                 i.fa.fa-sign-out
 
+        nav.main-nav(role='navigation')
+          .main-nav__item
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-th-list
+              a.main-nav__link(href='#') Dashboard
+              span.main-nav__badge 29
 
-        nav.main-nav(role='nav')
-          | asd asda
+          .main-nav__item.active
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-envelope
+              a.main-nav__link(href='#') Email
+
+            .main-nav__item-detail
+              ul.main-nav__submenu
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-th-list
+                  a.main-nav__link(href='#') Drafts
+                li.main-nav__submenu-item.active
+                  span.main-nav__icon-wrapper
+                    span.main-nav__badge 29
+
+                  a.main-nav__link(href='#') Inbox
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-th-list
+                  a.main-nav__link(href='#') Sent
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-th-list
+                  a.main-nav__link(href='#') Marked
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-th-list
+                  a.main-nav__link(href='#') Spam
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-th-list
+                  a.main-nav__link(href='#') Trash
+              .main-nav__labels
+                .main-nav__labels-title
+                .main-nav__labels-title
+
+          .main-nav__item
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-comments-o
+              a.main-nav__link(href='#') Messages
+              span.main-nav__badge 9
+          .main-nav__item
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-calendar
+              a.main-nav__link(href='#') Calendar
+              span.main-nav__badge 5
+          .main-nav__item
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-book
+              a.main-nav__link(href='#') Contacts
+          .main-nav__item
+            .main-nav__title
+              span.main-nav__icon-wrapper
+                i.main-nav__icon.fa.fa-archive
+              a.main-nav__link(href='#') Data
+
 
       .page__body
+        | sadsadasdas
+        .test
 
     footer.page__footer(role='contentinfo')
       a(href='/')
