@@ -88,10 +88,53 @@ html(lang="en")
                 i.main-nav__icon.fa.fa-archive
               a.main-nav__link(href='#') Data
 
-
       .page__body
-        | sadsadasdas
-        .test
+        .body-head
+          .body-head-wrapper
+            h1.body-head-wrapper__title Email
+              b  inbox
+            a.big-button(href="#")
+              i.fa.fa-pencil
+              | Compose
+          .body-actions
+            .search
+              input.search__input(type=text placeholder="Search...")
+              a.search__submit(href="#")
+                i.fa.fa-search
+            ul.body-actions__actions
+              li.body-actions__item
+                a.body-actions__action(href="#")
+                  i.fa.fa-list.fa-2x
+              li.body-actions__item
+                a.body-actions__action(href="#")
+                  i.fa.fa-align-justify.fa-2x
+              li.body-actions__item
+                a.body-actions__action(href="#")
+                  i.fa.fa-th.fa-2x
+              li.body-actions__item
+                a.body-actions__action(href="#")
+                  i.fa.fa-th-list.fa-2x
+        .clear
+        .body-content
+          .email-actions
+            ul.email-actions__main
+              li
+                a.email-actions__action(href="#") Delete
+              li
+                a.email-actions__action(href="#") Archive
+              li
+                a.email-actions__action(href="#") Share
+            ul.email-actions__secondary
+              li
+                a.email-actions__secondary-action(href="#")
+                  i.fa.fa-cog
+              li
+                a.email-actions__secondary-action(href="#")
+                  i.fa.fa-external-link
+              li
+                a.email-actions__secondary-action(href="#")
+                  i.fa.fa-arrows-alt
+
 
     footer.page__footer(role='contentinfo')
       a(href='/')
