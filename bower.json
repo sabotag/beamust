@@ -16,7 +16,8 @@
   "devDependencies": {
     "bourbon": "~4.1.1",
     "reset-scss": "*",
-    "sass-vertical-rhythm": "*"
+    "sass-vertical-rhythm": "*",
+    "font-awesome-sass": "~4.3.1"
   },
   "dependencies": {
     "normalize-scss": "~3.0.2"
