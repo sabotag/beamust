@@ -1,0 +1,42 @@
+.email-list-header {
+  background: #A3C3DC;
+  color: #988A7D;
+  font-weight: bold;
+}
+
+.email-list-header__th-label {
+  display: inline;
+}
+
+.email-list-header__th {
+  background: #E9E3DF;
+  @include adjust-leading-to(1.5);
+  vertical-align: middle;
+
+  .fa {
+    background: #ffffff;
+    border-radius: 100%;
+    font-size: rem(15);
+    width: rem(15);
+    height: rem(15);
+    margin-left: rem(5);
+  }
+}
+
+.email-list-header__check-all {
+  background: #A3C3DC;
+  border-radius: 0 0 rem(8) rem(8);
+  box-shadow: 0 -2px #A3C3DC;
+  border-collapse: separate;
+  border-spacing: 10px 50px;
+}
+
+.email-list-header__favorite {
+  border-radius: rem(8) 0 0 0;
+  border-width: 2px 0 0 2px;
+  box-shadow: inset 2px 0 #ffffff, 0px -2px #ffffff, -4px -6px #A3C3DC;
+}
+
+.email-list-header__label {
+  border-radius: 0 rem(8) 0 0;
+}

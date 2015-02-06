@@ -134,6 +134,27 @@ html(lang="en")
               li
                 a.email-actions__secondary-action(href="#")
                   i.fa.fa-arrows-alt
+          table.email-list
+            thead.email-list-header
+              tr
+                th.email-list-header__th.email-list-header__check-all
+                  input(type="checkbox", value="")
+                th.email-list-header__th.email-list-header__favorite
+                  i.fa.fa-angle-down
+                th.email-list-header__th.email-list-header__folder
+                  .email-list-header__th-label Folder
+                  i.fa.fa-angle-down
+                th.email-list-header__th.email-list-header__subject
+                  .email-list-header__th-label Subject
+                th.email-list-header__th.email-list-header__attachment
+                  .email-list-header__th-label Attachment
+                  i.fa.fa-angle-down
+                th.email-list-header__th.email-list-header__date
+                  .email-list-header__th-label Date
+                  i.fa.fa-angle-down
+                th.email-list-header__th.email-list-header__label
+                  .email-list-header__th-label Label
+                  i.fa.fa-angle-down
 
 
     footer.page__footer(role='contentinfo')
