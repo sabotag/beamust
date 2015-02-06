@@ -26,7 +26,7 @@ html(lang="en")
               span.main-nav__icon-wrapper
                 i.main-nav__icon.fa.fa-th-list
               a.main-nav__link(href='#') Dashboard
-              span.main-nav__badge 29
+              span.badge 29
 
           .main-nav__item.active
             .main-nav__title
@@ -38,48 +38,65 @@ html(lang="en")
               ul.main-nav__submenu
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    span.main-nav__badge
+                    span.badge
                       i.main-nav__icon.fa.fa-pencil
-                      em.main-nav__badge-alert 6
+                      em.badge-alert 6
                   a.main-nav__link(href='#') Drafts
                 li.main-nav__submenu-item.active
                   span.main-nav__icon-wrapper
-                    span.main-nav__badge
+                    span.badge
                       | 29
-                      em.main-nav__badge-alert 26
+                      em.badge-alert 26
                   a.main-nav__link(href='#') Inbox
                 li.main-nav__submenu-item
                   a.main-nav__link(href='#') Sent
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    span.main-nav__badge
+                    span.badge
                       i.main-nav__icon.fa.fa-star
                   a.main-nav__link(href='#') Marked
                 li.main-nav__submenu-item
                   span.main-nav__icon-wrapper
-                    span.main-nav__badge 3
+                    span.badge 3
                   a.main-nav__link(href='#') Spam
                 li.main-nav__submenu-item
                   a.main-nav__link(href='#') Trash
 
               ul.main-nav__submenu-mini
                 li.main-nav__submenu-item
-                  .main-nav__submenu-item__title Notes
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-tags
+                  .main-nav__submenu-item__title Label
+                  .main-nav__submenu-mini--labels
+                    a.label.highlight(href='#') personal
+                    a.label(href='#') work
+                    a.label.highlight(href='#') todo
+                    a.label.highlight(href='#') beamust
+                    a.label.highlight(href='#') family
+                    a.label.highlight(href='#') personal
+                    a.label(href='#') work
+                    a.label.highlight(href='#') todo
                 li.main-nav__submenu-item
-                  .main-nav__submenu-item__title Setings
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-pencil
+                  a.main-nav__submenu-item__title(href='#') Notes
+                li.main-nav__submenu-item
+                  span.main-nav__icon-wrapper
+                    i.main-nav__icon.fa.fa-cog
+                  a.main-nav__submenu-item__title(href='#') Setings
 
           .main-nav__item
             .main-nav__title
               span.main-nav__icon-wrapper
                 i.main-nav__icon.fa.fa-comments-o
               a.main-nav__link(href='#') Messages
-              span.main-nav__badge 9
+              span.badge 9
           .main-nav__item
             .main-nav__title
               span.main-nav__icon-wrapper
                 i.main-nav__icon.fa.fa-calendar
               a.main-nav__link(href='#') Calendar
-              span.main-nav__badge 5
+              span.badge 5
           .main-nav__item
             .main-nav__title
               span.main-nav__icon-wrapper
@@ -163,7 +180,8 @@ html(lang="en")
                 td.email-entry__select
                   input(type="checkbox")
                 td.email-entry__fav
-                  i.fa.fa-star
+                  span.badge
+                    i.fa.fa-star
                 td.email-entry__sender  Arnold Swatzenegger
                 td.email-entry__subject Re:Hello
                 td.email-entry__attach
@@ -176,7 +194,8 @@ html(lang="en")
                 td.email-entry__select
                   input(type="checkbox")
                 td.email-entry__fav
-                  i.fa.fa-star
+                  span.badge.light
+                    i.fa.fa-star
                 td.email-entry__sender  Arnold Swatzenegger
                 td.email-entry__subject Re:Hello
                 td.email-entry__attach

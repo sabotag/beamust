@@ -25,6 +25,27 @@
       .main-nav__submenu {
         border-radius: 0 0 0 rem(7);
       }
+
+      &:before {
+        background: get__color(milk);
+        height: 10px;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+      }
+
+      &:after {
+        background: get__color(wine);
+        height: 10px;
+        border-radius: 0 7px 0 0;
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+      }
     }
   }
 
@@ -48,26 +69,14 @@
 
   .main-nav__link {
 
-    + .main-nav__badge {
+    + .badge {
       margin-left: rem(10);
     }
   }
 
-  .main-nav__badge {
-    white-space: nowrap;
-    display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-    min-width: rhythm();
-    color: get__color(whiskey);
-    background: get__color(martini);
-    box-shadow: inset 1px 1px 0 0 get__color(vodka);
-    vertical-align: text-bottom;
-    padding: 0 rem(5);
-    @include adjust-font-size-to(rem(12), 1);
-    @include font__roboto-medium;
+  .badge {
 
-    .main-nav__badge-alert {
+    .badge-alert {
       background: get__color(cola);
       font-style: normal;
       border-radius: 50%;
@@ -100,7 +109,7 @@
       margin-right: rem(10);
     }
 
-    .main-nav__badge {
+    .badge {
 //      box-shadow: none;
     }
 
@@ -109,5 +118,18 @@
         @include font__roboto-medium;
       }
     }
+  }
+
+  .main-nav__submenu-mini {
+    padding: 0 rhythm(1.5) rhythm(1);
+
+    .main-nav__icon-wrapper {
+      color: get__color(samogon);
+    }
+  }
+
+  .main-nav__submenu-mini--labels {
+    @include adjust-leading-to(.75);
+    padding-bottom: rem(10);
   }
 }

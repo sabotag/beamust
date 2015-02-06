@@ -126,6 +126,10 @@
   .email-entry__fav {
     width: 40px;
     text-align: center;
+
+    .badge{
+      cursor: pointer;
+    }
   }
   .email-entry__select {
     width: 45px;

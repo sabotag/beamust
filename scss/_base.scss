@@ -51,9 +51,29 @@ a{
   display: inline-block;
   border-radius: rem(3);
   color: get__color(milk);
-  padding: 0 rem(3);
-  line-height: rem(13);
+  padding: 0 rem(5);
+  @include adjust-font-size-to(rem(10), .65);
   &.highlight {
     background-color: get__color(martini);
+  }
+}
+
+.badge {
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  min-width: rhythm();
+  color: get__color(whiskey);
+  background: get__color(martini);
+  box-shadow: inset 1px 1px 0 0 get__color(vodka);
+  vertical-align: text-bottom;
+  padding: 0 rem(5);
+  @include adjust-font-size-to(rem(12), 1);
+  @include font__roboto-medium;
+
+  &.light {
+    background: #eae5e1;
+    box-shadow: none;
   }
 }
