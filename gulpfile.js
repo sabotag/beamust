@@ -22,7 +22,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('copy:fonts', function() {
-    return gulp.src('./assets/fonts')
+    return gulp.src('./assets/fonts/*')
         .pipe(gulp.dest('./public/css/fonts'));
 });
 
