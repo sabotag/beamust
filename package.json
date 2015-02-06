@@ -13,7 +13,8 @@
     "browser-sync": "~2.0.0-rc5",
     "gulp-watch": "~4.1.0",
     "gulp-inject": "~1.1.1",
-    "gulp-ruby-sass": "~1.0.0-alpha.3"
+    "gulp-ruby-sass": "~1.0.0-alpha.3",
+    "gulp-changed": "~1.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
