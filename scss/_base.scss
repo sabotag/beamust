@@ -7,6 +7,18 @@ html, body {
   width: 100%;
 }
 
+@include establish-baseline;
+
+* , body, button, input, textarea{
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
 a{
   text-decoration: none;
   &:hover {

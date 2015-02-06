@@ -18,7 +18,6 @@
   @include size(rem($width) rem($width*$logo-ratio));
 }
 
-
 @mixin side-padding($vp: 0, $hp: $page--side-padding){
   @include padding($vp $hp)
 }

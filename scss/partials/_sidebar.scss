@@ -1,16 +1,21 @@
-.page-sidebar {
-//  background: get__color(wine);
+.page__sidebar {
+  background: get__color(wine);
   width: rem(300);
+  min-height: 100vh;
   @include side-padding($page--side-padding)
 }
 
 .sidebar__user-panel {
+  @include clearfix;
+
   .user-photo {
+    float: left;
     overflow: hidden;
     position: relative;
     border-radius: 50%;
-    border: rem(4) solid get__color(vodka);
-    @include size(rem(96));
+    border: rem(2) solid get__color(vodka);
+    padding: rem(4);
+    @include size(rem(100));
 
     &:before, &:after{
       content: '';
@@ -19,16 +24,26 @@
     }
 
     &:before {
-      box-shadow: 0 0 0 rem(4) get__color(beer);
+      border: rem(4) solid get__color(beer);
     }
 
     &:after {
-      box-shadow: 0 0 0 rem(2) get__color(cola);
+      border: rem(2) solid get__color(cola);
     }
 
     img {
       vertical-align: top;
+      border-radius: 50%;
       @include size(100%);
     }
+  }
+
+  .user-info {
+    margin-left: rem(130);
+  }
+
+  .user-name {
+    @include adjust-font-size-to(rem(24));
+    @include ellipsis;
   }
 }

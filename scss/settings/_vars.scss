@@ -3,6 +3,14 @@ $base--font-size: 14px !default;
 $em-base: $base--font-size!global;
 $base--line-height: 24px !default;
 
+// for rhytm
+$rhythm-unit: rem;
+$rem-with-px-fallback: false;
+$round-to-nearest-half-line: true;
+
+$base-font-size: $base--font-size !global;
+$base-line-height: $base--line-height !global;
+
 $font--Roboto: 'Roboto', sans-serif; // 100 300 500
 $font--Museo-500: 'Museo500-Regular', sans-serif;
 $font--Museo-700: 'Museo700-Regular', sans-serif;
