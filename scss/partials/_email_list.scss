@@ -2,3 +2,50 @@
   width: 100%;
   margin-top: 2px;
 }
+
+.email-entry {
+  font-size: rem(16);
+  border-bottom: 1px solid #f3f0eb;
+  &.email-entry-new {
+    font-weight: 500;
+  }
+  .email-entry__favorite {
+    width: 40px;
+    text-align: center;
+
+    .badge{
+      cursor: pointer;
+    }
+  }
+  .email-entry__select {
+    width: 45px;
+    text-align: center;
+  }
+  .email-entry__label {
+    width: 90px;
+  }
+  .email-entry__attachment {
+    width: 120px;
+  }
+  .email-entry__date {
+    width: 80px;
+  }
+  .email-entry__folder {
+    width: 175px;
+  }
+  td {
+    padding: rem(5) 0;
+    vertical-align: middle;
+    color: get__color(beer);
+  }
+  .email-entry__attachment {
+    .attach-icon {
+      margin-left: 10px;
+      color: get__color(cola);
+      font-size: 1.3em;
+      &.highlight{
+        color: get__color(martini);
+      }
+    }
+  }
+}
